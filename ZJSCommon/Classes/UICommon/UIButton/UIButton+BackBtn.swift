@@ -15,7 +15,7 @@ extension UIButton {
     ///
     /// - Parameter title: 按钮文字
     /// - Returns: 返回一个UIButton
-    class func zjsBackButton(_ title:String = "返回") -> UIButton {
+    class func zjsBackWithTextButton(_ title:String = "返回") -> UIButton {
         
         //创建按钮
         let btn = UIButton()
@@ -28,9 +28,9 @@ extension UIButton {
         btn.setTitleColor(UIColor.orange, for: .highlighted)
         
         //设置文字左侧的小图片
-        let imageName = "navigationbar_back_withtext"
+        let imageName = "nav_back_withtext"
         btn.setImage(UIImage(named:imageName), for: .normal)
-        btn.setImage(UIImage(named: imageName + "_highlighted"), for: .highlighted)
+        btn.setImage(UIImage(named: imageName + "_pressed"), for: .highlighted)
         
         btn.sizeToFit() //size自动适应内容的大小
         return btn
@@ -44,8 +44,8 @@ extension UIButton {
     ///   - target:  响应目标
     ///   - action:  要执行的方法
     /// - Returns: 返回一个UIButton
-    class func zjsBackButton(_ title:String = "返回",target: Any?, action: Selector) -> UIButton {
-        let btn = zjsBackButton(title)
+    class func zjsBackWithTextButton(_ title:String = "返回",target: Any?, action: Selector) -> UIButton {
+        let btn = zjsBackWithTextButton(title)
         
         //添加按钮点击事件
         btn.addTarget(target, action: action, for: .touchUpInside)

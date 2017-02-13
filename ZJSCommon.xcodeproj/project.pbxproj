@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E594533E1E517EB1005AC10C /* UIButton+NavigatorBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E594533D1E517EB1005AC10C /* UIButton+NavigatorBtn.swift */; };
 		E5E791E01E2F9BEE00D294E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E791DF1E2F9BEE00D294E1 /* AppDelegate.swift */; };
 		E5E791E21E2F9BEE00D294E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E791E11E2F9BEE00D294E1 /* ViewController.swift */; };
 		E5E791E71E2F9BEE00D294E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E791E61E2F9BEE00D294E1 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E594533D1E517EB1005AC10C /* UIButton+NavigatorBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+NavigatorBtn.swift"; sourceTree = "<group>"; };
 		E5E791DC1E2F9BEE00D294E1 /* ZJSCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJSCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E791DF1E2F9BEE00D294E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5E791E11E2F9BEE00D294E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				E5E791FC1E2FA72900D294E1 /* backButton.xcassets */,
 				E5E791FE1E2FA72900D294E1 /* UIButton+BackBtn.swift */,
+				E594533D1E517EB1005AC10C /* UIButton+NavigatorBtn.swift */,
 				E5E791FD1E2FA72900D294E1 /* BackButtonViewController.swift */,
 			);
 			name = UIButton;
@@ -167,6 +170,7 @@
 				E5E792011E2FA72900D294E1 /* UIButton+BackBtn.swift in Sources */,
 				E5E792001E2FA72900D294E1 /* BackButtonViewController.swift in Sources */,
 				E5E791E01E2F9BEE00D294E1 /* AppDelegate.swift in Sources */,
+				E594533E1E517EB1005AC10C /* UIButton+NavigatorBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
