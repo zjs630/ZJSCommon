@@ -21,6 +21,12 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func showRotationViewController(_ sender: UIButton) {
+        let vc = RotaionViewController()
+        navigationController?.pushViewController(vc, animated: true)
+
+        
+    }
     @IBAction func showBackViewController(_ sender: UIButton) {
         let vc = BackButtonViewController()
         vc.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: UIButton.zjsBackWithTextButton("zjs", target: self, action: #selector(backPressed)))
