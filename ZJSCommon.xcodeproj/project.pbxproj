@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E561022B1E541C7D00DE26F0 /* UpDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E561022A1E541C7D00DE26F0 /* UpDownButton.swift */; };
+		E561022D1E541DB100DE26F0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E561022C1E541DB100DE26F0 /* Media.xcassets */; };
+		E56102301E54289000DE26F0 /* BackButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E561022F1E54289000DE26F0 /* BackButtonViewController.swift */; };
+		E56102331E54293200DE26F0 /* RotaionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56102321E54293200DE26F0 /* RotaionViewController.swift */; };
 		E578FB3D1E51A88900306FB3 /* SLAnimationImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E578FB3A1E51A88900306FB3 /* SLAnimationImageView.m */; };
 		E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E578FB3C1E51A88900306FB3 /* SLLoadingView.m */; };
 		E594533E1E517EB1005AC10C /* UIButton+NavigatorBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E594533D1E517EB1005AC10C /* UIButton+NavigatorBtn.swift */; };
-		E59453461E519375005AC10C /* RotaionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59453451E519375005AC10C /* RotaionViewController.swift */; };
 		E59453481E519496005AC10C /* Animation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59453471E519496005AC10C /* Animation.xcassets */; };
 		E594534C1E51A1A5005AC10C /* UIImageView+SL.m in Sources */ = {isa = PBXBuildFile; fileRef = E594534B1E51A1A5005AC10C /* UIImageView+SL.m */; };
 		E5E791E01E2F9BEE00D294E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E791DF1E2F9BEE00D294E1 /* AppDelegate.swift */; };
@@ -19,18 +22,20 @@
 		E5E791EA1E2F9BEE00D294E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E791E81E2F9BEE00D294E1 /* LaunchScreen.storyboard */; };
 		E5E791FA1E2FA02000D294E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E791F81E2FA02000D294E1 /* Main.storyboard */; };
 		E5E791FF1E2FA72900D294E1 /* backButton.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E791FC1E2FA72900D294E1 /* backButton.xcassets */; };
-		E5E792001E2FA72900D294E1 /* BackButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E791FD1E2FA72900D294E1 /* BackButtonViewController.swift */; };
 		E5E792011E2FA72900D294E1 /* UIButton+BackBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E791FE1E2FA72900D294E1 /* UIButton+BackBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E561022A1E541C7D00DE26F0 /* UpDownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpDownButton.swift; path = CustomBtn/UpDownButton.swift; sourceTree = "<group>"; };
+		E561022C1E541DB100DE26F0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = CustomBtn/Media.xcassets; sourceTree = "<group>"; };
+		E561022F1E54289000DE26F0 /* BackButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButtonViewController.swift; sourceTree = "<group>"; };
+		E56102321E54293200DE26F0 /* RotaionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotaionViewController.swift; sourceTree = "<group>"; };
 		E578FB391E51A88900306FB3 /* SLAnimationImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAnimationImageView.h; sourceTree = "<group>"; };
 		E578FB3A1E51A88900306FB3 /* SLAnimationImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAnimationImageView.m; sourceTree = "<group>"; };
 		E578FB3B1E51A88900306FB3 /* SLLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLoadingView.h; sourceTree = "<group>"; };
 		E578FB3C1E51A88900306FB3 /* SLLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLoadingView.m; sourceTree = "<group>"; };
 		E594533D1E517EB1005AC10C /* UIButton+NavigatorBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+NavigatorBtn.swift"; sourceTree = "<group>"; };
 		E59453411E5192A2005AC10C /* ZJSCommon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZJSCommon-Bridging-Header.h"; sourceTree = "<group>"; };
-		E59453451E519375005AC10C /* RotaionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RotaionViewController.swift; path = Classes/OC/RotaionViewController.swift; sourceTree = "<group>"; };
 		E59453471E519496005AC10C /* Animation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Animation.xcassets; path = Classes/OC/Animation.xcassets; sourceTree = "<group>"; };
 		E594534A1E51A1A5005AC10C /* UIImageView+SL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+SL.h"; path = "Classes/OC/Category/UIImageView+SL.h"; sourceTree = "<group>"; };
 		E594534B1E51A1A5005AC10C /* UIImageView+SL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+SL.m"; path = "Classes/OC/Category/UIImageView+SL.m"; sourceTree = "<group>"; };
@@ -42,7 +47,6 @@
 		E5E791EB1E2F9BEE00D294E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5E791F91E2FA02000D294E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5E791FC1E2FA72900D294E1 /* backButton.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = backButton.xcassets; sourceTree = "<group>"; };
-		E5E791FD1E2FA72900D294E1 /* BackButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButtonViewController.swift; sourceTree = "<group>"; };
 		E5E791FE1E2FA72900D294E1 /* UIButton+BackBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+BackBtn.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +61,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E56102291E541C1D00DE26F0 /* CustomBtn */ = {
+			isa = PBXGroup;
+			children = (
+				E561022A1E541C7D00DE26F0 /* UpDownButton.swift */,
+				E561022C1E541DB100DE26F0 /* Media.xcassets */,
+			);
+			name = CustomBtn;
+			sourceTree = "<group>";
+		};
+		E561022E1E54289000DE26F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E561022F1E54289000DE26F0 /* BackButtonViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E56102311E54293200DE26F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E56102321E54293200DE26F0 /* RotaionViewController.swift */,
+			);
+			name = Controller;
+			path = Classes/OC/Controller;
+			sourceTree = "<group>";
+		};
 		E578FB381E51A88900306FB3 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,10 +102,10 @@
 		E59453401E519246005AC10C /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				E56102311E54293200DE26F0 /* Controller */,
 				E578FB381E51A88900306FB3 /* view */,
 				E59453491E51A133005AC10C /* Category */,
 				E59453411E5192A2005AC10C /* ZJSCommon-Bridging-Header.h */,
-				E59453451E519375005AC10C /* RotaionViewController.swift */,
 				E59453471E519496005AC10C /* Animation.xcassets */,
 			);
 			name = OC;
@@ -132,10 +162,11 @@
 		E5E791FB1E2FA72900D294E1 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				E561022E1E54289000DE26F0 /* Controller */,
+				E56102291E541C1D00DE26F0 /* CustomBtn */,
 				E5E791FC1E2FA72900D294E1 /* backButton.xcassets */,
 				E5E791FE1E2FA72900D294E1 /* UIButton+BackBtn.swift */,
 				E594533D1E517EB1005AC10C /* UIButton+NavigatorBtn.swift */,
-				E5E791FD1E2FA72900D294E1 /* BackButtonViewController.swift */,
 			);
 			name = UIButton;
 			path = Classes/UICommon/UIButton;
@@ -205,6 +236,7 @@
 				E5E791FF1E2FA72900D294E1 /* backButton.xcassets in Resources */,
 				E5E791E71E2F9BEE00D294E1 /* Assets.xcassets in Resources */,
 				E59453481E519496005AC10C /* Animation.xcassets in Resources */,
+				E561022D1E541DB100DE26F0 /* Media.xcassets in Resources */,
 				E5E791FA1E2FA02000D294E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,11 +252,12 @@
 				E594534C1E51A1A5005AC10C /* UIImageView+SL.m in Sources */,
 				E5E791E21E2F9BEE00D294E1 /* ViewController.swift in Sources */,
 				E5E792011E2FA72900D294E1 /* UIButton+BackBtn.swift in Sources */,
-				E5E792001E2FA72900D294E1 /* BackButtonViewController.swift in Sources */,
+				E56102301E54289000DE26F0 /* BackButtonViewController.swift in Sources */,
 				E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */,
 				E5E791E01E2F9BEE00D294E1 /* AppDelegate.swift in Sources */,
 				E594533E1E517EB1005AC10C /* UIButton+NavigatorBtn.swift in Sources */,
-				E59453461E519375005AC10C /* RotaionViewController.swift in Sources */,
+				E56102331E54293200DE26F0 /* RotaionViewController.swift in Sources */,
+				E561022B1E541C7D00DE26F0 /* UpDownButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
