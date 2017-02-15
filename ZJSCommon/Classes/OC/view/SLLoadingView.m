@@ -22,11 +22,12 @@
     self = [super initWithFrame:frame];
     if (self) {
         // 设置圆角和边框
-//        self.layer.masksToBounds = YES;
-//        self.layer.cornerRadius = 4.0;
+        self.layer.masksToBounds = YES;
+        self.layer.cornerRadius = 4.0;
 //        self.layer.borderWidth = 1.0;
 //        self.layer.borderColor = [UIColor colorWithRed:203/255.0 green:203/255.0 blue:203/255.0 alpha:1.0].CGColor;
-
+        self.backgroundColor = [UIColor whiteColor];
+        
         [self addAnimationView];
 
     }
