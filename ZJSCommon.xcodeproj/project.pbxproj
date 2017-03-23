@@ -13,6 +13,7 @@
 		E56102331E54293200DE26F0 /* RotaionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56102321E54293200DE26F0 /* RotaionViewController.swift */; };
 		E578FB3D1E51A88900306FB3 /* SLAnimationImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E578FB3A1E51A88900306FB3 /* SLAnimationImageView.m */; };
 		E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E578FB3C1E51A88900306FB3 /* SLLoadingView.m */; };
+		E58746391E83C75700FAFAE8 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E58746381E83C75700FAFAE8 /* NSString+Hash.m */; };
 		E594533E1E517EB1005AC10C /* UIButton+NavigatorBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E594533D1E517EB1005AC10C /* UIButton+NavigatorBtn.swift */; };
 		E59453481E519496005AC10C /* Animation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59453471E519496005AC10C /* Animation.xcassets */; };
 		E594534C1E51A1A5005AC10C /* UIImageView+SL.m in Sources */ = {isa = PBXBuildFile; fileRef = E594534B1E51A1A5005AC10C /* UIImageView+SL.m */; };
@@ -34,6 +35,8 @@
 		E578FB3A1E51A88900306FB3 /* SLAnimationImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAnimationImageView.m; sourceTree = "<group>"; };
 		E578FB3B1E51A88900306FB3 /* SLLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLoadingView.h; sourceTree = "<group>"; };
 		E578FB3C1E51A88900306FB3 /* SLLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLoadingView.m; sourceTree = "<group>"; };
+		E58746371E83C75700FAFAE8 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		E58746381E83C75700FAFAE8 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		E594533D1E517EB1005AC10C /* UIButton+NavigatorBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+NavigatorBtn.swift"; sourceTree = "<group>"; };
 		E59453411E5192A2005AC10C /* ZJSCommon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZJSCommon-Bridging-Header.h"; sourceTree = "<group>"; };
 		E59453471E519496005AC10C /* Animation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Animation.xcassets; path = Classes/OC/Animation.xcassets; sourceTree = "<group>"; };
@@ -99,6 +102,16 @@
 			path = Classes/OC/view;
 			sourceTree = "<group>";
 		};
+		E58746361E83C75700FAFAE8 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				E58746371E83C75700FAFAE8 /* NSString+Hash.h */,
+				E58746381E83C75700FAFAE8 /* NSString+Hash.m */,
+			);
+			name = Security;
+			path = Classes/Security;
+			sourceTree = "<group>";
+		};
 		E59453401E519246005AC10C /* OC */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +152,7 @@
 		E5E791DE1E2F9BEE00D294E1 /* ZJSCommon */ = {
 			isa = PBXGroup;
 			children = (
+				E58746361E83C75700FAFAE8 /* Security */,
 				E5E791F11E2F9BFA00D294E1 /* UICommon */,
 				E5E791DF1E2F9BEE00D294E1 /* AppDelegate.swift */,
 				E5E791E11E2F9BEE00D294E1 /* ViewController.swift */,
@@ -251,6 +265,7 @@
 				E578FB3D1E51A88900306FB3 /* SLAnimationImageView.m in Sources */,
 				E594534C1E51A1A5005AC10C /* UIImageView+SL.m in Sources */,
 				E5E791E21E2F9BEE00D294E1 /* ViewController.swift in Sources */,
+				E58746391E83C75700FAFAE8 /* NSString+Hash.m in Sources */,
 				E5E792011E2FA72900D294E1 /* UIButton+BackBtn.swift in Sources */,
 				E56102301E54289000DE26F0 /* BackButtonViewController.swift in Sources */,
 				E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */,
