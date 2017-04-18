@@ -17,12 +17,12 @@ class RotaionViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
 
-        self.addAnimationView()
-        imgView?.startAnimating()
+        addAnimationView()
+        imgView?.startAnimating() //手动开启动画
         
-        self.addLoadingView()//自动开启动画，需要停止，可隐藏视图， // loadingView.hidden = YES;
+        addLoadingView()//自动开启动画，需要停止，可隐藏视图， // loadingView.hidden = YES;
         
-        self.loadData()
+        loadData()
         
     }    
 

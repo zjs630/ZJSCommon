@@ -11,7 +11,14 @@
 @interface SLAnimationImageView : UIImageView
 @property (nonatomic,assign) BOOL isAnimating;
 
+/**
+ 开始动画
+ */
 - (void)startAnimating;
+
+/**
+ 暂停动画
+ */
 - (void)stopAnimating;
 
 @end

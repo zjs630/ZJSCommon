@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E51F20301EA617DC00B94019 /* XHCryptorTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E51F202F1EA617DC00B94019 /* XHCryptorTools.m */; };
 		E561022B1E541C7D00DE26F0 /* UpDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E561022A1E541C7D00DE26F0 /* UpDownButton.swift */; };
 		E561022D1E541DB100DE26F0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E561022C1E541DB100DE26F0 /* Media.xcassets */; };
 		E56102301E54289000DE26F0 /* BackButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E561022F1E54289000DE26F0 /* BackButtonViewController.swift */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E51F202E1EA617DC00B94019 /* XHCryptorTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHCryptorTools.h; sourceTree = "<group>"; };
+		E51F202F1EA617DC00B94019 /* XHCryptorTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHCryptorTools.m; sourceTree = "<group>"; };
 		E561022A1E541C7D00DE26F0 /* UpDownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpDownButton.swift; path = CustomBtn/UpDownButton.swift; sourceTree = "<group>"; };
 		E561022C1E541DB100DE26F0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = CustomBtn/Media.xcassets; sourceTree = "<group>"; };
 		E561022F1E54289000DE26F0 /* BackButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButtonViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +93,7 @@
 			path = Classes/OC/Controller;
 			sourceTree = "<group>";
 		};
-		E578FB381E51A88900306FB3 /* view */ = {
+		E578FB381E51A88900306FB3 /* 旋转视图 */ = {
 			isa = PBXGroup;
 			children = (
 				E578FB391E51A88900306FB3 /* SLAnimationImageView.h */,
@@ -98,30 +101,32 @@
 				E578FB3B1E51A88900306FB3 /* SLLoadingView.h */,
 				E578FB3C1E51A88900306FB3 /* SLLoadingView.m */,
 			);
-			name = view;
+			name = "旋转视图";
 			path = Classes/OC/view;
 			sourceTree = "<group>";
 		};
-		E58746361E83C75700FAFAE8 /* Security */ = {
+		E58746361E83C75700FAFAE8 /* Security加密解密 */ = {
 			isa = PBXGroup;
 			children = (
 				E58746371E83C75700FAFAE8 /* NSString+Hash.h */,
 				E58746381E83C75700FAFAE8 /* NSString+Hash.m */,
+				E51F202E1EA617DC00B94019 /* XHCryptorTools.h */,
+				E51F202F1EA617DC00B94019 /* XHCryptorTools.m */,
 			);
-			name = Security;
+			name = "Security加密解密";
 			path = Classes/Security;
 			sourceTree = "<group>";
 		};
-		E59453401E519246005AC10C /* OC */ = {
+		E59453401E519246005AC10C /* 之前OC的UI控件 */ = {
 			isa = PBXGroup;
 			children = (
 				E56102311E54293200DE26F0 /* Controller */,
-				E578FB381E51A88900306FB3 /* view */,
+				E578FB381E51A88900306FB3 /* 旋转视图 */,
 				E59453491E51A133005AC10C /* Category */,
 				E59453411E5192A2005AC10C /* ZJSCommon-Bridging-Header.h */,
 				E59453471E519496005AC10C /* Animation.xcassets */,
 			);
-			name = OC;
+			name = "之前OC的UI控件";
 			sourceTree = "<group>";
 		};
 		E59453491E51A133005AC10C /* Category */ = {
@@ -152,7 +157,7 @@
 		E5E791DE1E2F9BEE00D294E1 /* ZJSCommon */ = {
 			isa = PBXGroup;
 			children = (
-				E58746361E83C75700FAFAE8 /* Security */,
+				E58746361E83C75700FAFAE8 /* Security加密解密 */,
 				E5E791F11E2F9BFA00D294E1 /* UICommon */,
 				E5E791DF1E2F9BEE00D294E1 /* AppDelegate.swift */,
 				E5E791E11E2F9BEE00D294E1 /* ViewController.swift */,
@@ -167,13 +172,13 @@
 		E5E791F11E2F9BFA00D294E1 /* UICommon */ = {
 			isa = PBXGroup;
 			children = (
-				E59453401E519246005AC10C /* OC */,
-				E5E791FB1E2FA72900D294E1 /* UIButton */,
+				E59453401E519246005AC10C /* 之前OC的UI控件 */,
+				E5E791FB1E2FA72900D294E1 /* UIButton 各种按钮样式 */,
 			);
 			name = UICommon;
 			sourceTree = "<group>";
 		};
-		E5E791FB1E2FA72900D294E1 /* UIButton */ = {
+		E5E791FB1E2FA72900D294E1 /* UIButton 各种按钮样式 */ = {
 			isa = PBXGroup;
 			children = (
 				E561022E1E54289000DE26F0 /* Controller */,
@@ -182,7 +187,7 @@
 				E5E791FE1E2FA72900D294E1 /* UIButton+BackBtn.swift */,
 				E594533D1E517EB1005AC10C /* UIButton+NavigatorBtn.swift */,
 			);
-			name = UIButton;
+			name = "UIButton 各种按钮样式";
 			path = Classes/UICommon/UIButton;
 			sourceTree = "<group>";
 		};
@@ -273,6 +278,7 @@
 				E594533E1E517EB1005AC10C /* UIButton+NavigatorBtn.swift in Sources */,
 				E56102331E54293200DE26F0 /* RotaionViewController.swift in Sources */,
 				E561022B1E541C7D00DE26F0 /* UpDownButton.swift in Sources */,
+				E51F20301EA617DC00B94019 /* XHCryptorTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

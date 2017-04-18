@@ -36,7 +36,7 @@ extension UIButton {
         return btn
     }
     
-
+    
     /// 自定义的返回按钮带target，anction
     ///
     /// - Parameters:
@@ -52,10 +52,7 @@ extension UIButton {
         
         //btn.layer.borderColor = UIColor.red.cgColor
         //btn.layer.borderWidth = 1.0 //默认边框为0
-
+        
         return btn
-    }
-
-    
-
+    }    
 }
