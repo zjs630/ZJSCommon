@@ -193,15 +193,15 @@
     
     // 返回 PKCS #12 格式数据中的标示和证书
     OSStatus status = SecPKCS12Import(inPKCS12Data, optionsDictionary, &items);
-    
+    if (optionsDictionary) CFRelease(optionsDictionary);
+
     if (status == noErr) {
         CFDictionaryRef myIdentityAndTrust = CFArrayGetValueAtIndex(items, 0);
         myIdentity = (SecIdentityRef)CFDictionaryGetValue(myIdentityAndTrust, kSecImportItemIdentity);
         myTrust = (SecTrustRef)CFDictionaryGetValue(myIdentityAndTrust, kSecImportItemTrust);
+    }else{
+        return;
     }
-
-    if (optionsDictionary) CFRelease(optionsDictionary);
-    
     NSAssert(status == noErr, @"提取身份和信任失败");
     
     SecTrustResultType trustResult;
