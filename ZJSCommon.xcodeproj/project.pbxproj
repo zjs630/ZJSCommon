@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		624868611EC58CA500C4536C /* SFXLineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624868601EC58CA500C4536C /* SFXLineConstraint.swift */; };
 		E51F20301EA617DC00B94019 /* XHCryptorTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E51F202F1EA617DC00B94019 /* XHCryptorTools.m */; };
 		E561022B1E541C7D00DE26F0 /* UpDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E561022A1E541C7D00DE26F0 /* UpDownButton.swift */; };
 		E561022D1E541DB100DE26F0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E561022C1E541DB100DE26F0 /* Media.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		624868601EC58CA500C4536C /* SFXLineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFXLineConstraint.swift; sourceTree = "<group>"; };
 		E51F202E1EA617DC00B94019 /* XHCryptorTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHCryptorTools.h; sourceTree = "<group>"; };
 		E51F202F1EA617DC00B94019 /* XHCryptorTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHCryptorTools.m; sourceTree = "<group>"; };
 		E561022A1E541C7D00DE26F0 /* UpDownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpDownButton.swift; path = CustomBtn/UpDownButton.swift; sourceTree = "<group>"; };
@@ -67,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6248685F1EC58CA500C4536C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				624868601EC58CA500C4536C /* SFXLineConstraint.swift */,
+			);
+			name = Other;
+			path = Classes/Other;
+			sourceTree = "<group>";
+		};
 		E56102291E541C1D00DE26F0 /* CustomBtn */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +168,7 @@
 		E5E791DE1E2F9BEE00D294E1 /* ZJSCommon */ = {
 			isa = PBXGroup;
 			children = (
+				6248685F1EC58CA500C4536C /* Other */,
 				E58746361E83C75700FAFAE8 /* Security加密解密 */,
 				E5E791F11E2F9BFA00D294E1 /* UICommon */,
 				E5E791DF1E2F9BEE00D294E1 /* AppDelegate.swift */,
@@ -271,6 +283,7 @@
 				E594534C1E51A1A5005AC10C /* UIImageView+SL.m in Sources */,
 				E5E791E21E2F9BEE00D294E1 /* ViewController.swift in Sources */,
 				E58746391E83C75700FAFAE8 /* NSString+Hash.m in Sources */,
+				624868611EC58CA500C4536C /* SFXLineConstraint.swift in Sources */,
 				E5E792011E2FA72900D294E1 /* UIButton+BackBtn.swift in Sources */,
 				E56102301E54289000DE26F0 /* BackButtonViewController.swift in Sources */,
 				E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */,
