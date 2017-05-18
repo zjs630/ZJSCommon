@@ -15,9 +15,11 @@ class BackButtonViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        self.addMyButton()
-        self.addUpDownButton()
+        view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        
+        addMyButton()
+        
+        addUpDownButton()
     }
 
 
@@ -78,7 +80,16 @@ extension BackButtonViewController {
         let btn2 = UIButton.zjsBackWithTextButton("返回文字", target: self, action: #selector(backPressed))
         btn2.frame = CGRect(x: 20, y: 280, width: btn2.bounds.width, height: btn2.bounds.height)
         view.addSubview(btn2)
-
+        
+        //上面图片下面文字的按钮
+        let dic = ["fansupport":"应援" ,"fangroup":"Fan圈","fanlocation":"粉丝分布","fantrip":"行程"]
+        var x = 20
+        for (key,value) in dic {
+            let btn4 = UpImageDownTextButton(imageName: key, title: value )
+            btn4.frame = CGRect(x:x, y:400, width: 60, height: 60)
+            view.addSubview(btn4)
+            x += 80
+        }
     }
 }
 
