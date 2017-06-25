@@ -82,14 +82,19 @@ extension BackButtonViewController {
         view.addSubview(btn2)
         
         //上面图片下面文字的按钮
-        let dic = ["fansupport":"应援" ,"fangroup":"Fan圈","fanlocation":"粉丝分布","fantrip":"行程"]
+        let dic = ["fansupport":"赞" ,"fangroup":"圈子","fanlocation":"位置分布","fantrip":"旅行"]
         var x = 20
         for (key,value) in dic {
             let btn4 = UpImageDownTextButton(imageName: key, title: value )
             btn4.frame = CGRect(x:x, y:400, width: 60, height: 60)
+            btn4.addTarget(self, action: #selector(btnPrint), for: .touchUpInside)
             view.addSubview(btn4)
             x += 80
         }
+    }
+    
+    @objc private func btnPrint() {
+        print("test")
     }
 }
 

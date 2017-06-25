@@ -16,6 +16,7 @@
 		62AC508D1ECD888400E67C95 /* UpImageDownTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC50851ECD888400E67C95 /* UpImageDownTextButton.swift */; };
 		62AC508E1ECD888400E67C95 /* UIButton+BackBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC50871ECD888400E67C95 /* UIButton+BackBtn.swift */; };
 		62AC508F1ECD888400E67C95 /* UIButton+NavigatorBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC50881ECD888400E67C95 /* UIButton+NavigatorBtn.swift */; };
+		62C86D491F0000ED0095188C /* SFSelectedAlphaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C86D481F0000ED0095188C /* SFSelectedAlphaButton.swift */; };
 		E51F20301EA617DC00B94019 /* XHCryptorTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E51F202F1EA617DC00B94019 /* XHCryptorTools.m */; };
 		E578FB3D1E51A88900306FB3 /* SLAnimationImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E578FB3A1E51A88900306FB3 /* SLAnimationImageView.m */; };
 		E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E578FB3C1E51A88900306FB3 /* SLLoadingView.m */; };
@@ -39,6 +40,7 @@
 		62AC50851ECD888400E67C95 /* UpImageDownTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpImageDownTextButton.swift; sourceTree = "<group>"; };
 		62AC50871ECD888400E67C95 /* UIButton+BackBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+BackBtn.swift"; sourceTree = "<group>"; };
 		62AC50881ECD888400E67C95 /* UIButton+NavigatorBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+NavigatorBtn.swift"; sourceTree = "<group>"; };
+		62C86D481F0000ED0095188C /* SFSelectedAlphaButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSelectedAlphaButton.swift; sourceTree = "<group>"; };
 		E51F202E1EA617DC00B94019 /* XHCryptorTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHCryptorTools.h; sourceTree = "<group>"; };
 		E51F202F1EA617DC00B94019 /* XHCryptorTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHCryptorTools.m; sourceTree = "<group>"; };
 		E578FB391E51A88900306FB3 /* SLAnimationImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAnimationImageView.h; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				62AC50831ECD888400E67C95 /* Media.xcassets */,
 				62AC50841ECD888400E67C95 /* UpDownButton.swift */,
+				62C86D481F0000ED0095188C /* SFSelectedAlphaButton.swift */,
 				62AC50851ECD888400E67C95 /* UpImageDownTextButton.swift */,
 			);
 			path = CustomBtn;
@@ -281,6 +284,7 @@
 				62AC508D1ECD888400E67C95 /* UpImageDownTextButton.swift in Sources */,
 				624868611EC58CA500C4536C /* SFXLineConstraint.swift in Sources */,
 				62AC508E1ECD888400E67C95 /* UIButton+BackBtn.swift in Sources */,
+				62C86D491F0000ED0095188C /* SFSelectedAlphaButton.swift in Sources */,
 				62AC508C1ECD888400E67C95 /* UpDownButton.swift in Sources */,
 				E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */,
 				E5E791E01E2F9BEE00D294E1 /* AppDelegate.swift in Sources */,

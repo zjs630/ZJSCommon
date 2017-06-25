@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class UpImageDownTextButton: UIButton {
+class UpImageDownTextButton: SFSelectedAlphaButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)

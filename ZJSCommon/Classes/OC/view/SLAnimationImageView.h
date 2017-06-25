@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, SFAudioPlayStatus) {
+    notBegin = 1,
+    animationing,
+    animationStop,
+    animationPause
+};
+
 @interface SLAnimationImageView : UIImageView
-@property (nonatomic,assign) BOOL isAnimating;
+
+@property (nonatomic, assign) SFAudioPlayStatus status;
 
 /**
  开始动画
@@ -17,8 +25,16 @@
 - (void)startAnimating;
 
 /**
- 暂停动画
+ 停止动画
  */
 - (void)stopAnimating;
+
+/**
+ 暂停动画
+ */
+- (void)pauseAnimation;
+
+//恢复动画
+- (void)resumeAnimation;
 
 @end

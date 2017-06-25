@@ -14,65 +14,82 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(doAnimation:) name:UIApplicationDidBecomeActiveNotification object:nil];
+        _status = notBegin;
     }
     return self;
 }
 
-//nib 文件加载调用此方法 解决前后台切换，图片动画停止的问题。 by zjs
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(doAnimation:) name:UIApplicationDidBecomeActiveNotification object:nil];
+        _status = notBegin;
     }
     return self;
-}
-
-- (void)setImage:(UIImage *)image{
-    [super setImage:image];
-    self.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
-
 }
 
 - (void)startAnimating{
-    BOOL isAnimating = [self isAnimating];
-    if (isAnimating) {
-        return;
+    if ([self.layer animationKeys]) {
+        [self.layer removeAllAnimations];
     }
     CABasicAnimation* rotationAnimation;
     rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 ];
     rotationAnimation.duration = 0.5;
     rotationAnimation.cumulative = YES;
-    rotationAnimation.repeatCount = 9999;
-    
+    rotationAnimation.repeatCount = MAXFLOAT;
+    rotationAnimation.removedOnCompletion = NO; //如不设置，前后台切换，图片动画会停止
     [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
-    self.hidden = NO;
-    [self.superview bringSubviewToFront:self];
-}
-
-- (BOOL)isAnimating{
-    if ([self.layer animationKeys]) {
-        return YES;
-    }
-    return NO;
+    self.layer.speed = 1;
+    
+    _status = animationing;
+    
 }
 
 - (void)stopAnimating{
     if ([self.layer animationKeys]) {
         [self.layer removeAllAnimations];
     }
-    self.hidden = YES;
+    _status = animationStop;
 }
 
--(void)doAnimation:(NSNotification *)notify{
-    BOOL isHidden = self.hidden;
-    if (isHidden == NO) {
-        [self stopAnimating];
-        [self startAnimating];
+//暂停动画
+- (void)pauseAnimation {
+    //（0-5）
+    //开始时间：0
+    //    myView.layer.beginTime
+    //1.取出当前时间，转成动画暂停的时间
+    CFTimeInterval pauseTime = [self.layer convertTime:CACurrentMediaTime() fromLayer:nil];
+    
+    //2.设置动画的时间偏移量，指定时间偏移量的目的是让动画定格在该时间点的位置
+    self.layer.timeOffset = pauseTime;
+    
+    //3.将动画的运行速度设置为0， 默认的运行速度是1.0
+    self.layer.speed = 0;
+    _status = animationPause;
+}
+
+//恢复动画
+- (void)resumeAnimation {
+    if (_status == animationPause) {
+        //1.将动画的时间偏移量作为暂停的时间点
+        CFTimeInterval pauseTime = self.layer.timeOffset;
+        
+        //2.计算出开始时间
+        CFTimeInterval begin = CACurrentMediaTime() - pauseTime;
+        
+        [self.layer setTimeOffset:0];
+        [self.layer setBeginTime:begin];
+        
+        self.layer.speed = 1;
+        return;
     }
+    
+    [self startAnimating];
 }
 
-- (void)dealloc{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+- (void)setImage:(UIImage *)image{
+    [super setImage:image];
+    //self.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
+
 }
+
 @end
