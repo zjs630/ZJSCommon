@@ -13,11 +13,9 @@ class UpDownButton: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
 
         setTitle("首页" + " ", for: .normal) //加空格是为了设置图片和文字的间距
 
-        
         //设置字体和颜色
         titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
         setTitleColor(UIColor.darkGray, for: .normal)

@@ -86,11 +86,16 @@ extension BackButtonViewController {
         var x = 20
         for (key,value) in dic {
             let btn4 = UpImageDownTextButton(imageName: key, title: value )
-            btn4.frame = CGRect(x:x, y:400, width: 60, height: 60)
+            btn4.frame = CGRect(x:x, y:320, width: 60, height: 60)
             btn4.addTarget(self, action: #selector(btnPrint), for: .touchUpInside)
             view.addSubview(btn4)
             x += 80
         }
+        
+        let btn3 = SFFirstTextLastImageButton()
+        btn3.frame = CGRect(x: 20, y: 400, width: 140, height: 40)
+        view.addSubview(btn3)
+        
     }
     
     @objc private func btnPrint() {
