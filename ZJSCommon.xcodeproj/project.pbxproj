@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,8 @@
 		E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E578FB3C1E51A88900306FB3 /* SLLoadingView.m */; };
 		E58746391E83C75700FAFAE8 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E58746381E83C75700FAFAE8 /* NSString+Hash.m */; };
 		E59453481E519496005AC10C /* Animation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59453471E519496005AC10C /* Animation.xcassets */; };
+		E597BF8922B3E7D10031A6D9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E597BF8822B3E7D10031A6D9 /* UIColor+Extension.swift */; };
+		E597BF8B22B3F2C40031A6D9 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E597BF8A22B3F2C40031A6D9 /* UIImage+Extension.swift */; };
 		E5B79E0D22B387A000E3AC96 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79E0A22B387A000E3AC96 /* UIDevice+Extension.swift */; };
 		E5B79E0E22B387A000E3AC96 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79E0B22B387A000E3AC96 /* KeyChainManager.swift */; };
 		E5B79E0F22B387A000E3AC96 /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79E0C22B387A000E3AC96 /* HttpHeader.swift */; };
@@ -55,6 +57,8 @@
 		E58746381E83C75700FAFAE8 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		E59453411E5192A2005AC10C /* ZJSCommon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZJSCommon-Bridging-Header.h"; sourceTree = "<group>"; };
 		E59453471E519496005AC10C /* Animation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Animation.xcassets; path = Classes/OC/Animation.xcassets; sourceTree = "<group>"; };
+		E597BF8822B3E7D10031A6D9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E597BF8A22B3F2C40031A6D9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		E5B79E0A22B387A000E3AC96 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "ZJSCommon/Classes/httpHeader/UIDevice+Extension.swift"; sourceTree = SOURCE_ROOT; };
 		E5B79E0B22B387A000E3AC96 /* KeyChainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyChainManager.swift; path = ZJSCommon/Classes/httpHeader/KeyChainManager.swift; sourceTree = SOURCE_ROOT; };
 		E5B79E0C22B387A000E3AC96 /* HttpHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpHeader.swift; path = ZJSCommon/Classes/httpHeader/HttpHeader.swift; sourceTree = SOURCE_ROOT; };
@@ -155,6 +159,15 @@
 			name = "OC的UI控件";
 			sourceTree = "<group>";
 		};
+		E597BF8722B3E7470031A6D9 /* UIKit+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E597BF8822B3E7D10031A6D9 /* UIColor+Extension.swift */,
+				E597BF8A22B3F2C40031A6D9 /* UIImage+Extension.swift */,
+			);
+			path = "UIKit+Extension";
+			sourceTree = "<group>";
+		};
 		E5B79E0322B3875A00E3AC96 /* 封装httpHeader */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +215,7 @@
 		E5E791F11E2F9BFA00D294E1 /* UICommon */ = {
 			isa = PBXGroup;
 			children = (
+				E597BF8722B3E7470031A6D9 /* UIKit+Extension */,
 				62AC507F1ECD888400E67C95 /* UIButton */,
 				E59453401E519246005AC10C /* OC的UI控件 */,
 			);
@@ -236,7 +250,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = ZhangJingshun;
+				ORGANIZATIONNAME = ix86;
 				TargetAttributes = {
 					E5E791DB1E2F9BEE00D294E1 = {
 						CreatedOnToolsVersion = 8.1;
@@ -246,7 +260,7 @@
 				};
 			};
 			buildConfigurationList = E5E791D71E2F9BEE00D294E1 /* Build configuration list for PBXProject "ZJSCommon" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -285,11 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				62AC508F1ECD888400E67C95 /* UIButton+NavigatorBtn.swift in Sources */,
+				E597BF8922B3E7D10031A6D9 /* UIColor+Extension.swift in Sources */,
 				E578FB3D1E51A88900306FB3 /* SLAnimationImageView.m in Sources */,
 				E5E791E21E2F9BEE00D294E1 /* ViewController.swift in Sources */,
 				E58746391E83C75700FAFAE8 /* NSString+Hash.m in Sources */,
 				62AC508D1ECD888400E67C95 /* UpImageDownTextButton.swift in Sources */,
 				624868611EC58CA500C4536C /* SFXLineConstraint.swift in Sources */,
+				E597BF8B22B3F2C40031A6D9 /* UIImage+Extension.swift in Sources */,
 				62AC508E1ECD888400E67C95 /* UIButton+BackBtn.swift in Sources */,
 				E5B79E0E22B387A000E3AC96 /* KeyChainManager.swift in Sources */,
 				E5B79E0F22B387A000E3AC96 /* HttpHeader.swift in Sources */,
@@ -433,7 +449,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -444,7 +461,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ZJSCommon/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sengled.ZJSCommon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZJSCommon/ZJSCommon-Bridging-Header.h";
@@ -459,7 +479,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ZJSCommon/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sengled.ZJSCommon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZJSCommon/ZJSCommon-Bridging-Header.h";
