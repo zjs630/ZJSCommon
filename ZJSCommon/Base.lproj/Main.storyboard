@@ -37,11 +37,21 @@
                                     <action selector="showRotationViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OGv-Qm-g1f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTc-dr-kT8">
+                                <rect key="frame" x="113.5" y="199" width="93" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="httpHeader"/>
+                                <connections>
+                                    <action selector="httpHeaderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZpQ-Pt-pFu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="mTc-dr-kT8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2yX-CT-pGl"/>
                             <constraint firstItem="jqe-SY-kqp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="Kdi-E2-esO"/>
                             <constraint firstItem="ehm-ju-4mW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="89" id="Voh-Yr-DYw"/>
+                            <constraint firstItem="mTc-dr-kT8" firstAttribute="top" secondItem="ehm-ju-4mW" secondAttribute="bottom" constant="15" id="i2Z-6C-8bg"/>
                             <constraint firstItem="ehm-ju-4mW" firstAttribute="top" secondItem="jqe-SY-kqp" secondAttribute="bottom" constant="16" id="kG6-7g-9ll"/>
                             <constraint firstItem="jqe-SY-kqp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="29" id="tdw-3a-25g"/>
                         </constraints>

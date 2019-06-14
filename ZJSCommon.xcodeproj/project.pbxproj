@@ -23,9 +23,9 @@
 		E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E578FB3C1E51A88900306FB3 /* SLLoadingView.m */; };
 		E58746391E83C75700FAFAE8 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E58746381E83C75700FAFAE8 /* NSString+Hash.m */; };
 		E59453481E519496005AC10C /* Animation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59453471E519496005AC10C /* Animation.xcassets */; };
-		E5B79DFC22B37E2E00E3AC96 /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79DFB22B37E2E00E3AC96 /* HttpHeader.swift */; };
-		E5B79DFE22B37EF600E3AC96 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79DFD22B37EF600E3AC96 /* UIDevice+Extension.swift */; };
-		E5B79E0022B37F2E00E3AC96 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79DFF22B37F2E00E3AC96 /* KeyChainManager.swift */; };
+		E5B79E0D22B387A000E3AC96 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79E0A22B387A000E3AC96 /* UIDevice+Extension.swift */; };
+		E5B79E0E22B387A000E3AC96 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79E0B22B387A000E3AC96 /* KeyChainManager.swift */; };
+		E5B79E0F22B387A000E3AC96 /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79E0C22B387A000E3AC96 /* HttpHeader.swift */; };
 		E5E791E01E2F9BEE00D294E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E791DF1E2F9BEE00D294E1 /* AppDelegate.swift */; };
 		E5E791E21E2F9BEE00D294E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E791E11E2F9BEE00D294E1 /* ViewController.swift */; };
 		E5E791E71E2F9BEE00D294E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E791E61E2F9BEE00D294E1 /* Assets.xcassets */; };
@@ -55,9 +55,9 @@
 		E58746381E83C75700FAFAE8 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		E59453411E5192A2005AC10C /* ZJSCommon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZJSCommon-Bridging-Header.h"; sourceTree = "<group>"; };
 		E59453471E519496005AC10C /* Animation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Animation.xcassets; path = Classes/OC/Animation.xcassets; sourceTree = "<group>"; };
-		E5B79DFB22B37E2E00E3AC96 /* HttpHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHeader.swift; sourceTree = "<group>"; };
-		E5B79DFD22B37EF600E3AC96 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
-		E5B79DFF22B37F2E00E3AC96 /* KeyChainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
+		E5B79E0A22B387A000E3AC96 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "ZJSCommon/Classes/httpHeader/UIDevice+Extension.swift"; sourceTree = SOURCE_ROOT; };
+		E5B79E0B22B387A000E3AC96 /* KeyChainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyChainManager.swift; path = ZJSCommon/Classes/httpHeader/KeyChainManager.swift; sourceTree = SOURCE_ROOT; };
+		E5B79E0C22B387A000E3AC96 /* HttpHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpHeader.swift; path = ZJSCommon/Classes/httpHeader/HttpHeader.swift; sourceTree = SOURCE_ROOT; };
 		E5E791DC1E2F9BEE00D294E1 /* ZJSCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJSCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E791DF1E2F9BEE00D294E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5E791E11E2F9BEE00D294E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,14 +155,15 @@
 			name = "OC的UI控件";
 			sourceTree = "<group>";
 		};
-		E5B79DFA22B37C0800E3AC96 /* 封装httpHeader */ = {
+		E5B79E0322B3875A00E3AC96 /* 封装httpHeader */ = {
 			isa = PBXGroup;
 			children = (
-				E5B79DFB22B37E2E00E3AC96 /* HttpHeader.swift */,
-				E5B79DFF22B37F2E00E3AC96 /* KeyChainManager.swift */,
-				E5B79DFD22B37EF600E3AC96 /* UIDevice+Extension.swift */,
+				E5B79E0C22B387A000E3AC96 /* HttpHeader.swift */,
+				E5B79E0B22B387A000E3AC96 /* KeyChainManager.swift */,
+				E5B79E0A22B387A000E3AC96 /* UIDevice+Extension.swift */,
 			);
-			path = "封装httpHeader";
+			name = "封装httpHeader";
+			path = "Classes/封装httpHeader";
 			sourceTree = "<group>";
 		};
 		E5E791D31E2F9BEE00D294E1 = {
@@ -184,7 +185,7 @@
 		E5E791DE1E2F9BEE00D294E1 /* ZJSCommon */ = {
 			isa = PBXGroup;
 			children = (
-				E5B79DFA22B37C0800E3AC96 /* 封装httpHeader */,
+				E5B79E0322B3875A00E3AC96 /* 封装httpHeader */,
 				6248685F1EC58CA500C4536C /* Other */,
 				E58746361E83C75700FAFAE8 /* Security加密解密 */,
 				E5E791F11E2F9BFA00D294E1 /* UICommon */,
@@ -287,16 +288,16 @@
 				E578FB3D1E51A88900306FB3 /* SLAnimationImageView.m in Sources */,
 				E5E791E21E2F9BEE00D294E1 /* ViewController.swift in Sources */,
 				E58746391E83C75700FAFAE8 /* NSString+Hash.m in Sources */,
-				E5B79DFC22B37E2E00E3AC96 /* HttpHeader.swift in Sources */,
 				62AC508D1ECD888400E67C95 /* UpImageDownTextButton.swift in Sources */,
 				624868611EC58CA500C4536C /* SFXLineConstraint.swift in Sources */,
 				62AC508E1ECD888400E67C95 /* UIButton+BackBtn.swift in Sources */,
-				E5B79DFE22B37EF600E3AC96 /* UIDevice+Extension.swift in Sources */,
+				E5B79E0E22B387A000E3AC96 /* KeyChainManager.swift in Sources */,
+				E5B79E0F22B387A000E3AC96 /* HttpHeader.swift in Sources */,
 				E540CF161F1CEF6D007F0683 /* SFFirstTextLastImageButton.swift in Sources */,
 				62C86D491F0000ED0095188C /* SFSelectedAlphaButton.swift in Sources */,
+				E5B79E0D22B387A000E3AC96 /* UIDevice+Extension.swift in Sources */,
 				62AC508C1ECD888400E67C95 /* UpDownButton.swift in Sources */,
 				E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */,
-				E5B79E0022B37F2E00E3AC96 /* KeyChainManager.swift in Sources */,
 				E5E791E01E2F9BEE00D294E1 /* AppDelegate.swift in Sources */,
 				E51F20301EA617DC00B94019 /* XHCryptorTools.m in Sources */,
 				62AC508A1ECD888400E67C95 /* BackButtonViewController.swift in Sources */,

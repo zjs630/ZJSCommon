@@ -32,5 +32,9 @@ class ViewController: UIViewController {
         _ = navigationController?.popViewController(animated: true)
     }
 
+    @IBAction func httpHeaderPressed(_ sender: UIButton) {
+        print(HttpHeader.headers)
+        
+    }
 }
 

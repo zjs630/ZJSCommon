@@ -13,7 +13,7 @@ struct HttpHeader {
     
     static var headers:[String: String] = {
         var headers = [String: String]()
-        headers["Platform"] = "IOS"
+        headers["Platform"] = "iOS"
         headers["Sys-Version"] = UIDevice.current.systemVersion
         let ver = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
         headers["App-Version"] = ver ?? "0"
