@@ -8,7 +8,6 @@
 
 #import "SLLoadingView.h"
 #import "SLAnimationImageView.h"
-#import "UIImageView+SL.h"
 
 @interface SLLoadingView()
 @property (strong,nonatomic) SLAnimationImageView *imgView;
@@ -38,7 +37,6 @@
 - (void)addAnimationView{
     _imgView = [[SLAnimationImageView alloc] init];
     _imgView.image = [UIImage imageNamed:@"icon_loading"];
-//    [_imgView imageWithName:@"icon_loading" asBounds:YES];
     [self addSubview:_imgView];
     [_imgView startAnimating];
 }

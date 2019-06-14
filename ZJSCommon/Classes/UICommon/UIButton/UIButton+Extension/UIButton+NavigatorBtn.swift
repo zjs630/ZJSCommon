@@ -14,26 +14,26 @@ import UIKit
 extension UIButton {
 
     /// 返回按钮
-    class func zjsBackButton() -> UIButton {
+    static func zjsBackButton() -> UIButton {
         //创建按钮
         let imageName = "nav_back_button"
         return self.zjsCreateImageBtn(imageName)
     }
     
     /// 编辑按钮
-    class func zjsEditButton() -> UIButton {
+    static func zjsEditButton() -> UIButton {
         let imageName = "nav_edit_button"
         return self.zjsCreateImageBtn(imageName)
     }
 
     /// ok按钮
-    class func zjsOkButton() -> UIButton {
+    static func zjsOkButton() -> UIButton {
         let imageName = "nav_ok_button"
         return self.zjsCreateImageBtn(imageName)
     }
 
     /// 评论发送按钮
-    class func zjsCommontSendButton() -> UIButton {
+    static func zjsCommontSendButton() -> UIButton {
         let imageName: String = "nav_send_button"
         return self.zjsCreateImageBtn(imageName)
     }
@@ -42,7 +42,7 @@ extension UIButton {
     ///
     /// - Parameter imageName: 图片名称
     /// - Returns: 返回图片按钮
-    class func zjsCreateImageBtn(_ imageName:String) -> UIButton {
+    static func zjsCreateImageBtn(_ imageName:String) -> UIButton {
         let btn = UIButton()
         btn.setImage(UIImage(named:imageName), for: .normal)
         btn.setImage(UIImage(named: imageName + "_pressed"), for: .highlighted)

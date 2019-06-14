@@ -23,7 +23,9 @@
 		E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E578FB3C1E51A88900306FB3 /* SLLoadingView.m */; };
 		E58746391E83C75700FAFAE8 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E58746381E83C75700FAFAE8 /* NSString+Hash.m */; };
 		E59453481E519496005AC10C /* Animation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59453471E519496005AC10C /* Animation.xcassets */; };
-		E594534C1E51A1A5005AC10C /* UIImageView+SL.m in Sources */ = {isa = PBXBuildFile; fileRef = E594534B1E51A1A5005AC10C /* UIImageView+SL.m */; };
+		E5B79DFC22B37E2E00E3AC96 /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79DFB22B37E2E00E3AC96 /* HttpHeader.swift */; };
+		E5B79DFE22B37EF600E3AC96 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79DFD22B37EF600E3AC96 /* UIDevice+Extension.swift */; };
+		E5B79E0022B37F2E00E3AC96 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79DFF22B37F2E00E3AC96 /* KeyChainManager.swift */; };
 		E5E791E01E2F9BEE00D294E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E791DF1E2F9BEE00D294E1 /* AppDelegate.swift */; };
 		E5E791E21E2F9BEE00D294E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E791E11E2F9BEE00D294E1 /* ViewController.swift */; };
 		E5E791E71E2F9BEE00D294E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E791E61E2F9BEE00D294E1 /* Assets.xcassets */; };
@@ -53,8 +55,9 @@
 		E58746381E83C75700FAFAE8 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		E59453411E5192A2005AC10C /* ZJSCommon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZJSCommon-Bridging-Header.h"; sourceTree = "<group>"; };
 		E59453471E519496005AC10C /* Animation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Animation.xcassets; path = Classes/OC/Animation.xcassets; sourceTree = "<group>"; };
-		E594534A1E51A1A5005AC10C /* UIImageView+SL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+SL.h"; path = "Classes/OC/Category/UIImageView+SL.h"; sourceTree = "<group>"; };
-		E594534B1E51A1A5005AC10C /* UIImageView+SL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+SL.m"; path = "Classes/OC/Category/UIImageView+SL.m"; sourceTree = "<group>"; };
+		E5B79DFB22B37E2E00E3AC96 /* HttpHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHeader.swift; sourceTree = "<group>"; };
+		E5B79DFD22B37EF600E3AC96 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		E5B79DFF22B37F2E00E3AC96 /* KeyChainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
 		E5E791DC1E2F9BEE00D294E1 /* ZJSCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJSCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E791DF1E2F9BEE00D294E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5E791E11E2F9BEE00D294E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,20 +149,20 @@
 			children = (
 				62AC507D1ECD885700E67C95 /* RotaionViewController.swift */,
 				E578FB381E51A88900306FB3 /* 旋转视图 */,
-				E59453491E51A133005AC10C /* Category */,
 				E59453411E5192A2005AC10C /* ZJSCommon-Bridging-Header.h */,
 				E59453471E519496005AC10C /* Animation.xcassets */,
 			);
 			name = "OC的UI控件";
 			sourceTree = "<group>";
 		};
-		E59453491E51A133005AC10C /* Category */ = {
+		E5B79DFA22B37C0800E3AC96 /* 封装httpHeader */ = {
 			isa = PBXGroup;
 			children = (
-				E594534A1E51A1A5005AC10C /* UIImageView+SL.h */,
-				E594534B1E51A1A5005AC10C /* UIImageView+SL.m */,
+				E5B79DFB22B37E2E00E3AC96 /* HttpHeader.swift */,
+				E5B79DFF22B37F2E00E3AC96 /* KeyChainManager.swift */,
+				E5B79DFD22B37EF600E3AC96 /* UIDevice+Extension.swift */,
 			);
-			name = Category;
+			path = "封装httpHeader";
 			sourceTree = "<group>";
 		};
 		E5E791D31E2F9BEE00D294E1 = {
@@ -181,6 +184,7 @@
 		E5E791DE1E2F9BEE00D294E1 /* ZJSCommon */ = {
 			isa = PBXGroup;
 			children = (
+				E5B79DFA22B37C0800E3AC96 /* 封装httpHeader */,
 				6248685F1EC58CA500C4536C /* Other */,
 				E58746361E83C75700FAFAE8 /* Security加密解密 */,
 				E5E791F11E2F9BFA00D294E1 /* UICommon */,
@@ -230,7 +234,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = ZhangJingshun;
 				TargetAttributes = {
 					E5E791DB1E2F9BEE00D294E1 = {
@@ -242,7 +246,7 @@
 			};
 			buildConfigurationList = E5E791D71E2F9BEE00D294E1 /* Build configuration list for PBXProject "ZJSCommon" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -281,16 +285,18 @@
 			files = (
 				62AC508F1ECD888400E67C95 /* UIButton+NavigatorBtn.swift in Sources */,
 				E578FB3D1E51A88900306FB3 /* SLAnimationImageView.m in Sources */,
-				E594534C1E51A1A5005AC10C /* UIImageView+SL.m in Sources */,
 				E5E791E21E2F9BEE00D294E1 /* ViewController.swift in Sources */,
 				E58746391E83C75700FAFAE8 /* NSString+Hash.m in Sources */,
+				E5B79DFC22B37E2E00E3AC96 /* HttpHeader.swift in Sources */,
 				62AC508D1ECD888400E67C95 /* UpImageDownTextButton.swift in Sources */,
 				624868611EC58CA500C4536C /* SFXLineConstraint.swift in Sources */,
 				62AC508E1ECD888400E67C95 /* UIButton+BackBtn.swift in Sources */,
+				E5B79DFE22B37EF600E3AC96 /* UIDevice+Extension.swift in Sources */,
 				E540CF161F1CEF6D007F0683 /* SFFirstTextLastImageButton.swift in Sources */,
 				62C86D491F0000ED0095188C /* SFSelectedAlphaButton.swift in Sources */,
 				62AC508C1ECD888400E67C95 /* UpDownButton.swift in Sources */,
 				E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */,
+				E5B79E0022B37F2E00E3AC96 /* KeyChainManager.swift in Sources */,
 				E5E791E01E2F9BEE00D294E1 /* AppDelegate.swift in Sources */,
 				E51F20301EA617DC00B94019 /* XHCryptorTools.m in Sources */,
 				62AC508A1ECD888400E67C95 /* BackButtonViewController.swift in Sources */,
@@ -324,20 +330,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -374,20 +389,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -424,7 +448,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZJSCommon/ZJSCommon-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -438,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sengled.ZJSCommon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZJSCommon/ZJSCommon-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

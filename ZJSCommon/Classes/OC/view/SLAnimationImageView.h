@@ -15,6 +15,9 @@ typedef NS_ENUM(NSUInteger, SFAudioPlayStatus) {
     animationPause
 };
 
+/**
+ 旋转的imageView
+ */
 @interface SLAnimationImageView : UIImageView
 
 @property (nonatomic, assign) SFAudioPlayStatus status;

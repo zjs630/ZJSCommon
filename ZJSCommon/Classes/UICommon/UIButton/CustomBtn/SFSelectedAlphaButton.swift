@@ -34,7 +34,7 @@ class SFSelectedAlphaButton: UIButton {
             imageView?.alpha = alpha
         }
     }
-    
+
     @objc private func changeStyleButtonTouchDown(button: UIButton) {
         isSelected = true
     }

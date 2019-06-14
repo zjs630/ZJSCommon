@@ -34,7 +34,7 @@ class RotaionViewController: UIViewController {
     func addAnimationView() {
         imgView = SLAnimationImageView()
         imgView?.image = UIImage(named: "icon_loading")
-        imgView?.frame = CGRect(x: 20, y: 84, width: (imgView?.bounds.width)!, height: (imgView?.bounds.height)!)
+        imgView?.frame = CGRect(x: 20, y: 184, width: (imgView?.bounds.width)!, height: (imgView?.bounds.height)!)
         view.addSubview(imgView!)
     }
     
@@ -44,9 +44,6 @@ class RotaionViewController: UIViewController {
         //三秒后停止动画
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3){
             self.imgView?.stopAnimating()
-//                    self.loadingView?.setNeedsUpdateConstraints()
-//                    self.loadingView?.updateConstraints()
-
         }
     }
     

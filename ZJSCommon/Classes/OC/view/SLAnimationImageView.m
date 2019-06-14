@@ -32,10 +32,10 @@
     }
     CABasicAnimation* rotationAnimation;
     rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 ];
-    rotationAnimation.duration = 0.5;
+    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 ]; // 动画结束值
+    rotationAnimation.duration = 0.5; //动画的持续时长
     rotationAnimation.cumulative = YES;
-    rotationAnimation.repeatCount = MAXFLOAT;
+    rotationAnimation.repeatCount = MAXFLOAT; // 动画循环次数
     rotationAnimation.removedOnCompletion = NO; //如不设置，前后台切换，图片动画会停止
     [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
     self.layer.speed = 1;
@@ -53,9 +53,6 @@
 
 //暂停动画
 - (void)pauseAnimation {
-    //（0-5）
-    //开始时间：0
-    //    myView.layer.beginTime
     //1.取出当前时间，转成动画暂停的时间
     CFTimeInterval pauseTime = [self.layer convertTime:CACurrentMediaTime() fromLayer:nil];
     
@@ -76,9 +73,8 @@
         //2.计算出开始时间
         CFTimeInterval begin = CACurrentMediaTime() - pauseTime;
         
-        [self.layer setTimeOffset:0];
-        [self.layer setBeginTime:begin];
-        
+        self.layer.timeOffset = 0;
+        self.layer.beginTime = begin;
         self.layer.speed = 1;
         return;
     }
@@ -88,7 +84,7 @@
 
 - (void)setImage:(UIImage *)image{
     [super setImage:image];
-    //self.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
+    self.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
 
 }
 

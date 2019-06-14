@@ -15,7 +15,7 @@ extension UIButton {
     ///
     /// - Parameter title: 按钮文字
     /// - Returns: 返回一个UIButton
-    class func zjsBackWithTextButton(_ title:String = "返回") -> UIButton {
+    static func zjsBackWithTextButton(_ title:String = "返回") -> UIButton {
         
         //创建按钮
         let btn = UIButton()
@@ -44,7 +44,7 @@ extension UIButton {
     ///   - target:  响应目标
     ///   - action:  要执行的方法
     /// - Returns: 返回一个UIButton
-    class func zjsBackWithTextButton(_ title:String = "返回",target: Any?, action: Selector) -> UIButton {
+    static func zjsBackWithTextButton(_ title:String = "返回",target: Any?, action: Selector) -> UIButton {
         let btn = zjsBackWithTextButton(title)
         
         //添加按钮点击事件
