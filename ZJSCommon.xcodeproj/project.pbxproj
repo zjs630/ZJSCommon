@@ -28,6 +28,7 @@
 		E5B79E0D22B387A000E3AC96 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79E0A22B387A000E3AC96 /* UIDevice+Extension.swift */; };
 		E5B79E0E22B387A000E3AC96 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79E0B22B387A000E3AC96 /* KeyChainManager.swift */; };
 		E5B79E0F22B387A000E3AC96 /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B79E0C22B387A000E3AC96 /* HttpHeader.swift */; };
+		E5B909B422B4C0330094025F /* BorderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B909B322B4C0330094025F /* BorderLabel.swift */; };
 		E5E791E01E2F9BEE00D294E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E791DF1E2F9BEE00D294E1 /* AppDelegate.swift */; };
 		E5E791E21E2F9BEE00D294E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E791E11E2F9BEE00D294E1 /* ViewController.swift */; };
 		E5E791E71E2F9BEE00D294E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E791E61E2F9BEE00D294E1 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		E5B79E0A22B387A000E3AC96 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "ZJSCommon/Classes/httpHeader/UIDevice+Extension.swift"; sourceTree = SOURCE_ROOT; };
 		E5B79E0B22B387A000E3AC96 /* KeyChainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyChainManager.swift; path = ZJSCommon/Classes/httpHeader/KeyChainManager.swift; sourceTree = SOURCE_ROOT; };
 		E5B79E0C22B387A000E3AC96 /* HttpHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpHeader.swift; path = ZJSCommon/Classes/httpHeader/HttpHeader.swift; sourceTree = SOURCE_ROOT; };
+		E5B909B322B4C0330094025F /* BorderLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderLabel.swift; sourceTree = "<group>"; };
 		E5E791DC1E2F9BEE00D294E1 /* ZJSCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJSCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E791DF1E2F9BEE00D294E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5E791E11E2F9BEE00D294E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,14 @@
 			path = "Classes/封装httpHeader";
 			sourceTree = "<group>";
 		};
+		E5B909B222B4BF920094025F /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				E5B909B322B4C0330094025F /* BorderLabel.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		E5E791D31E2F9BEE00D294E1 = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +225,7 @@
 		E5E791F11E2F9BFA00D294E1 /* UICommon */ = {
 			isa = PBXGroup;
 			children = (
+				E5B909B222B4BF920094025F /* CustomView */,
 				E597BF8722B3E7470031A6D9 /* UIKit+Extension */,
 				62AC507F1ECD888400E67C95 /* UIButton */,
 				E59453401E519246005AC10C /* OC的UI控件 */,
@@ -311,6 +322,7 @@
 				E5B79E0F22B387A000E3AC96 /* HttpHeader.swift in Sources */,
 				E540CF161F1CEF6D007F0683 /* SFFirstTextLastImageButton.swift in Sources */,
 				62C86D491F0000ED0095188C /* SFSelectedAlphaButton.swift in Sources */,
+				E5B909B422B4C0330094025F /* BorderLabel.swift in Sources */,
 				E5B79E0D22B387A000E3AC96 /* UIDevice+Extension.swift in Sources */,
 				62AC508C1ECD888400E67C95 /* UpDownButton.swift in Sources */,
 				E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */,
