@@ -8,20 +8,18 @@
 
 import UIKit
 
+// 应用场景，用户名后面跟一个编辑图片
+/// 自定义按钮，文字在前，图片在后
 class SFFirstTextLastImageButton: SFSelectedAlphaButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-
-        setTitle("首页" + " ", for: .normal) //加空格是为了设置图片和文字的间距
 
         //设置字体和颜色
         titleLabel?.font = UIFont.systemFont(ofSize: 17)
         titleLabel?.lineBreakMode = .byTruncatingTail
         setTitleColor(UIColor.darkGray, for: .normal)
        
-        let imageName = "nav_edit_button"
-        setImage(UIImage(named:imageName), for: .normal)
         setTitleColor(.white, for: .normal)
         //设置大小
         sizeToFit()

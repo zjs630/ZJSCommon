@@ -8,7 +8,23 @@
 
 import UIKit
 
-/// 自定义按钮，图片在文字后面。//而系统默认的图片在文字的左边。
+/* 示例代码：
+ // 将按钮添加到导航栏中间位置
+ fileprivate func addUpDownButton() {
+     let btn_updown = UpDownButton()
+     btn_updown.addTarget(self, action: #selector(clickTitleButton), for: .touchUpInside)
+     navigationItem.titleView = btn_updown
+ }
+ 
+ // 点击按钮图片切换不同的状态
+ @objc private func clickTitleButton(btn:UIButton) {
+    btn.isSelected = !btn.isSelected
+ }
+
+ */
+
+//系统按钮默认的图片在文字的左边。
+/// 自定义按钮，图片在文字后面。
 class UpDownButton: UIButton {
 
     override init(frame: CGRect) {
@@ -42,10 +58,8 @@ class UpDownButton: UIButton {
                 return
         }
         
-        titleLabel.frame = titleLabel.frame.offsetBy(dx: -imageView.bounds.width, dy: 0)
-        
-        imageView.frame = imageView.frame.offsetBy(dx: titleLabel.bounds.width, dy: 0)
-        
+        titleLabel.frame.origin.x = 0
+        imageView.frame.origin.x = titleLabel.bounds.width
     }
     
 }

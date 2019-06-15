@@ -3,7 +3,7 @@
 //  ZJSCommon
 //
 //  Created by ZhangJingshun on 2017/1/18.
-//  Copyright © 2017年 ZhangJingshun. All rights reserved.
+//  Copyright © 2017年 ix86. All rights reserved.
 //
 
 
@@ -37,7 +37,6 @@ extension BackButtonViewController {
         let btn_updown = UpDownButton()
         btn_updown.addTarget(self, action: #selector(clickTitleButton), for: .touchUpInside)
         navigationItem.titleView = btn_updown
-        navigationItem.titleView?.layoutSubviews()
     }
     
     @objc private func clickTitleButton(btn:UIButton) {
@@ -92,7 +91,7 @@ extension BackButtonViewController {
             x += 80
         }
         
-        let btn3 = SFFirstTextLastImageButton()
+        let btn3 = SFFirstTextLastImageButton(imageName: "user_center_edit", title: "用户名")
         btn3.frame = CGRect(x: 20, y: 440, width: 140, height: 40)
         view.addSubview(btn3)
         

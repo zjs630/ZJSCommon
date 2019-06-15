@@ -2,7 +2,7 @@
 //  UIDevice+Extension.swift
 //  ZJSCommon
 //
-//  Created by 张京顺 on 2019/6/14.
+//  Created by ZhangJingshun on 2019/6/14.
 //  Copyright © 2019 ZhangJingshun. All rights reserved.
 //
 

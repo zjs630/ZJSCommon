@@ -19,6 +19,7 @@
 		62C86D491F0000ED0095188C /* SFSelectedAlphaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C86D481F0000ED0095188C /* SFSelectedAlphaButton.swift */; };
 		E51F20301EA617DC00B94019 /* XHCryptorTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E51F202F1EA617DC00B94019 /* XHCryptorTools.m */; };
 		E540CF161F1CEF6D007F0683 /* SFFirstTextLastImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540CF151F1CEF6D007F0683 /* SFFirstTextLastImageButton.swift */; };
+		E56B3CBF22B4E4C3007DEE4C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B3CBE22B4E4C3007DEE4C /* Date+Extension.swift */; };
 		E578FB3D1E51A88900306FB3 /* SLAnimationImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E578FB3A1E51A88900306FB3 /* SLAnimationImageView.m */; };
 		E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E578FB3C1E51A88900306FB3 /* SLLoadingView.m */; };
 		E58746391E83C75700FAFAE8 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E58746381E83C75700FAFAE8 /* NSString+Hash.m */; };
@@ -50,6 +51,7 @@
 		E51F202E1EA617DC00B94019 /* XHCryptorTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHCryptorTools.h; sourceTree = "<group>"; };
 		E51F202F1EA617DC00B94019 /* XHCryptorTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHCryptorTools.m; sourceTree = "<group>"; };
 		E540CF151F1CEF6D007F0683 /* SFFirstTextLastImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFirstTextLastImageButton.swift; sourceTree = "<group>"; };
+		E56B3CBE22B4E4C3007DEE4C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		E578FB391E51A88900306FB3 /* SLAnimationImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAnimationImageView.h; sourceTree = "<group>"; };
 		E578FB3A1E51A88900306FB3 /* SLAnimationImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAnimationImageView.m; sourceTree = "<group>"; };
 		E578FB3B1E51A88900306FB3 /* SLLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLoadingView.h; sourceTree = "<group>"; };
@@ -110,9 +112,6 @@
 			children = (
 				62AC50831ECD888400E67C95 /* Media.xcassets */,
 				62AC50841ECD888400E67C95 /* UpDownButton.swift */,
-				62C86D481F0000ED0095188C /* SFSelectedAlphaButton.swift */,
-				62AC50851ECD888400E67C95 /* UpImageDownTextButton.swift */,
-				E540CF151F1CEF6D007F0683 /* SFFirstTextLastImageButton.swift */,
 			);
 			path = CustomBtn;
 			sourceTree = "<group>";
@@ -124,6 +123,14 @@
 				62AC50881ECD888400E67C95 /* UIButton+NavigatorBtn.swift */,
 			);
 			path = "UIButton+Extension";
+			sourceTree = "<group>";
+		};
+		E56B3CBD22B4E479007DEE4C /* Foundation+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E56B3CBE22B4E4C3007DEE4C /* Date+Extension.swift */,
+			);
+			path = "Foundation+Extension";
 			sourceTree = "<group>";
 		};
 		E578FB381E51A88900306FB3 /* 旋转视图 */ = {
@@ -185,6 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				E5B909B322B4C0330094025F /* BorderLabel.swift */,
+				62C86D481F0000ED0095188C /* SFSelectedAlphaButton.swift */,
+				62AC50851ECD888400E67C95 /* UpImageDownTextButton.swift */,
+				E540CF151F1CEF6D007F0683 /* SFFirstTextLastImageButton.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -225,6 +235,7 @@
 		E5E791F11E2F9BFA00D294E1 /* UICommon */ = {
 			isa = PBXGroup;
 			children = (
+				E56B3CBD22B4E479007DEE4C /* Foundation+Extension */,
 				E5B909B222B4BF920094025F /* CustomView */,
 				E597BF8722B3E7470031A6D9 /* UIKit+Extension */,
 				62AC507F1ECD888400E67C95 /* UIButton */,
@@ -310,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62AC508F1ECD888400E67C95 /* UIButton+NavigatorBtn.swift in Sources */,
+				E56B3CBF22B4E4C3007DEE4C /* Date+Extension.swift in Sources */,
 				E597BF8922B3E7D10031A6D9 /* UIColor+Extension.swift in Sources */,
 				E578FB3D1E51A88900306FB3 /* SLAnimationImageView.m in Sources */,
 				E5E791E21E2F9BEE00D294E1 /* ViewController.swift in Sources */,

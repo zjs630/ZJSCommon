@@ -9,11 +9,21 @@
 import UIKit
 import Foundation
 
+/* 示例代码
+ let btn = UpImageDownTextButton(imageName: "imgName", title: "text" )
+ // frame高度 >= 图片高度 + 文字高度, frame宽度要 > 图片和文字的宽度
+ btn.frame = CGRect(x:x, y:360, width: 60, height: 60)
+ btn.addTarget(self, action: #selector(btnPrint), for: .touchUpInside)
+ view.addSubview(btn)
+ */
+
+// 加透明度整体效果会好一些，如果不要透明度，可继承UIButton
+/// 自定义一个按钮，图片在上，文字在下，点击整体透明度为60%
 class UpImageDownTextButton: SFSelectedAlphaButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setTitle("应援", for: .normal)
+        setTitle("圈子", for: .normal)
         //设置字体和颜色
         titleLabel?.font = UIFont.systemFont(ofSize: 12)
         titleLabel?.textAlignment = .center
@@ -55,7 +65,9 @@ class UpImageDownTextButton: SFSelectedAlphaButton {
         let vH = bounds.height
         let vW = bounds.width
         
+        // 图片在上面
         imageView.frame = CGRect(x: (vW-imgW)/2, y: 0, width: imgW, height: imgH)
+        // 文字在图片的下面
         titleLabel.frame = CGRect(x: 0, y: imgH, width: vW, height: vH-imgH)
         
     }
