@@ -10,19 +10,6 @@ import UIKit
 
 
 extension UIView {
-    static func lineView() -> UIView {
-        let view = UIView()
-        view.backgroundColor = UIColor(white: 0, alpha: 0.1)
-        return view
-    }
-    func setCorner(radius:CGFloat, _ masksToBounds:Bool = false) {
-        layer.cornerRadius = radius
-        layer.masksToBounds = masksToBounds
-    }
-    func setBorder(width:CGFloat,color:UIColor)  {
-        layer.borderColor = color.cgColor
-        layer.borderWidth = width
-    }
     
     /// 自定义颜色的UIView
     /// - Parameter color: 16进制颜色
@@ -37,7 +24,25 @@ extension UIView {
         view.backgroundColor = UIColor(color)
         return view
     }
- 
+    
+    /// 圆角带边框的View
+    /// - Parameters:
+    ///   - color: 边框颜色（十六进制）
+    ///   - width: 边框宽度
+    ///   - corner: 圆角大小
+    ///   - bgColor: view背景颜色
+    static func ts_borderView(color: UInt32, width: CGFloat = 1/UIScreen.main.scale, corner: CGFloat = 0,bgColor: UInt32 = 0xFFFFFF) -> UIView {
+        let view = UIView()
+        if corner > 0 {
+            view.layer.cornerRadius = corner
+            view.layer.masksToBounds = true
+        }
+        view.layer.borderColor = UIColor(color).cgColor
+        view.layer.borderWidth = width
+        view.backgroundColor = UIColor(bgColor)
+        return view
+    }
+
     
     /// 截取View的屏幕
     public func takeCurrentShot() -> UIImage? {

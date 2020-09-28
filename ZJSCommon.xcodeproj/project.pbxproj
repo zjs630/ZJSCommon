@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C287241F4B14FA4856DBE17 /* Pods_ZJSCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CCDC4A11DF86EDF5228AF2 /* Pods_ZJSCommon.framework */; };
 		624868611EC58CA500C4536C /* SFXLineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624868601EC58CA500C4536C /* SFXLineConstraint.swift */; };
 		62AC507E1ECD885700E67C95 /* RotaionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC507D1ECD885700E67C95 /* RotaionViewController.swift */; };
 		62AC50891ECD888400E67C95 /* backButton.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62AC50801ECD888400E67C95 /* backButton.xcassets */; };
@@ -18,6 +19,12 @@
 		62AC508F1ECD888400E67C95 /* UIButton+NavigatorBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC50881ECD888400E67C95 /* UIButton+NavigatorBtn.swift */; };
 		62C86D491F0000ED0095188C /* SFSelectedAlphaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C86D481F0000ED0095188C /* SFSelectedAlphaButton.swift */; };
 		70286AF3252188F10004BFE7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286AF2252188F10004BFE7 /* UIView.swift */; };
+		70286AF625218D5A0004BFE7 /* DateSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286AF525218D5A0004BFE7 /* DateSelectView.swift */; };
+		70286AFA25218D660004BFE7 /* TSTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286AF925218D660004BFE7 /* TSTimePickerView.swift */; };
+		70286AFB25218D660004BFE7 /* TSDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286AF825218D660004BFE7 /* TSDatePickerView.swift */; };
+		70286AFE25218DB00004BFE7 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286AFD25218DB00004BFE7 /* UIButton.swift */; };
+		70286B0125218E8A0004BFE7 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286B0025218E8A0004BFE7 /* Date.swift */; };
+		70286B0425218E980004BFE7 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286B0325218E980004BFE7 /* UILabel.swift */; };
 		70D8D482252180D5004E17A8 /* MySegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D8D481252180D5004E17A8 /* MySegmentedControl.swift */; };
 		70D8D486252181A1004E17A8 /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D8D485252181A1004E17A8 /* SegmentViewController.swift */; };
 		70D8D48B25218375004E17A8 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D8D48A25218375004E17A8 /* UIScreen.swift */; };
@@ -42,6 +49,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CE70BE8482144283A0881CA /* Pods-ZJSCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJSCommon.release.xcconfig"; path = "Target Support Files/Pods-ZJSCommon/Pods-ZJSCommon.release.xcconfig"; sourceTree = "<group>"; };
+		30CCDC4A11DF86EDF5228AF2 /* Pods_ZJSCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJSCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		624868601EC58CA500C4536C /* SFXLineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFXLineConstraint.swift; sourceTree = "<group>"; };
 		62AC507D1ECD885700E67C95 /* RotaionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RotaionViewController.swift; path = Classes/OC/RotaionViewController.swift; sourceTree = "<group>"; };
 		62AC50801ECD888400E67C95 /* backButton.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = backButton.xcassets; sourceTree = "<group>"; };
@@ -53,6 +62,12 @@
 		62AC50881ECD888400E67C95 /* UIButton+NavigatorBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+NavigatorBtn.swift"; sourceTree = "<group>"; };
 		62C86D481F0000ED0095188C /* SFSelectedAlphaButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSelectedAlphaButton.swift; sourceTree = "<group>"; };
 		70286AF2252188F10004BFE7 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		70286AF525218D5A0004BFE7 /* DateSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectView.swift; sourceTree = "<group>"; };
+		70286AF825218D660004BFE7 /* TSDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSDatePickerView.swift; sourceTree = "<group>"; };
+		70286AF925218D660004BFE7 /* TSTimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSTimePickerView.swift; sourceTree = "<group>"; };
+		70286AFD25218DB00004BFE7 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		70286B0025218E8A0004BFE7 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		70286B0325218E980004BFE7 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		70D8D481252180D5004E17A8 /* MySegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySegmentedControl.swift; sourceTree = "<group>"; };
 		70D8D485252181A1004E17A8 /* SegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
 		70D8D48A25218375004E17A8 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
@@ -81,6 +96,7 @@
 		E5E791E91E2F9BEE00D294E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5E791EB1E2F9BEE00D294E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5E791F91E2FA02000D294E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E7CCEEAD46DB471FB9B11EB4 /* Pods-ZJSCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJSCommon.debug.xcconfig"; path = "Target Support Files/Pods-ZJSCommon/Pods-ZJSCommon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +104,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C287241F4B14FA4856DBE17 /* Pods_ZJSCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		440ADD11971028B445C366B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7CCEEAD46DB471FB9B11EB4 /* Pods-ZJSCommon.debug.xcconfig */,
+				1CE70BE8482144283A0881CA /* Pods-ZJSCommon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6248685F1EC58CA500C4536C /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +171,9 @@
 		70D8D488252181B3004E17A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				70286AF825218D660004BFE7 /* TSDatePickerView.swift */,
+				70286AF925218D660004BFE7 /* TSTimePickerView.swift */,
+				70286AF525218D5A0004BFE7 /* DateSelectView.swift */,
 				70D8D481252180D5004E17A8 /* MySegmentedControl.swift */,
 			);
 			path = View;
@@ -193,15 +222,18 @@
 			name = "OC的UI控件";
 			sourceTree = "<group>";
 		};
-		E597BF8722B3E7470031A6D9 /* UIKit+Extension */ = {
+		E597BF8722B3E7470031A6D9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				70286B0325218E980004BFE7 /* UILabel.swift */,
+				70286B0025218E8A0004BFE7 /* Date.swift */,
+				70286AFD25218DB00004BFE7 /* UIButton.swift */,
 				70286AF2252188F10004BFE7 /* UIView.swift */,
 				70D8D48A25218375004E17A8 /* UIScreen.swift */,
 				E597BF8822B3E7D10031A6D9 /* UIColor+Extension.swift */,
 				E597BF8A22B3F2C40031A6D9 /* UIImage+Extension.swift */,
 			);
-			path = "UIKit+Extension";
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		E5B79E0322B3875A00E3AC96 /* httpHeader */ = {
@@ -231,6 +263,8 @@
 			children = (
 				E5E791DE1E2F9BEE00D294E1 /* ZJSCommon */,
 				E5E791DD1E2F9BEE00D294E1 /* Products */,
+				440ADD11971028B445C366B8 /* Pods */,
+				FC24091AE730514FE5D6B283 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,11 +299,19 @@
 				70D8D48425218169004E17A8 /* SegmentControl */,
 				E56B3CBD22B4E479007DEE4C /* Foundation+Extension */,
 				E5B909B222B4BF920094025F /* CustomView */,
-				E597BF8722B3E7470031A6D9 /* UIKit+Extension */,
+				E597BF8722B3E7470031A6D9 /* Extension */,
 				62AC507F1ECD888400E67C95 /* UIButton */,
 				E59453401E519246005AC10C /* OC的UI控件 */,
 			);
 			name = UICommon;
+			sourceTree = "<group>";
+		};
+		FC24091AE730514FE5D6B283 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30CCDC4A11DF86EDF5228AF2 /* Pods_ZJSCommon.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +321,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5E791EE1E2F9BEE00D294E1 /* Build configuration list for PBXNativeTarget "ZJSCommon" */;
 			buildPhases = (
+				880FD728F21DFADD4CDB9657 /* [CP] Check Pods Manifest.lock */,
 				E5E791D81E2F9BEE00D294E1 /* Sources */,
 				E5E791D91E2F9BEE00D294E1 /* Frameworks */,
 				E5E791DA1E2F9BEE00D294E1 /* Resources */,
+				7AF1CE5A96ED4737D132EA51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,7 +343,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = ix86;
 				TargetAttributes = {
 					E5E791DB1E2F9BEE00D294E1 = {
@@ -343,6 +387,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7AF1CE5A96ED4737D132EA51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZJSCommon/Pods-ZJSCommon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZJSCommon/Pods-ZJSCommon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZJSCommon/Pods-ZJSCommon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		880FD728F21DFADD4CDB9657 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZJSCommon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E5E791D81E2F9BEE00D294E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -350,8 +436,11 @@
 			files = (
 				70286AF3252188F10004BFE7 /* UIView.swift in Sources */,
 				62AC508F1ECD888400E67C95 /* UIButton+NavigatorBtn.swift in Sources */,
+				70286AF625218D5A0004BFE7 /* DateSelectView.swift in Sources */,
 				E56B3CBF22B4E4C3007DEE4C /* Date+Extension.swift in Sources */,
 				E597BF8922B3E7D10031A6D9 /* UIColor+Extension.swift in Sources */,
+				70286AFE25218DB00004BFE7 /* UIButton.swift in Sources */,
+				70286B0425218E980004BFE7 /* UILabel.swift in Sources */,
 				70D8D482252180D5004E17A8 /* MySegmentedControl.swift in Sources */,
 				E578FB3D1E51A88900306FB3 /* SLAnimationImageView.m in Sources */,
 				E5E791E21E2F9BEE00D294E1 /* ViewController.swift in Sources */,
@@ -360,6 +449,7 @@
 				624868611EC58CA500C4536C /* SFXLineConstraint.swift in Sources */,
 				E597BF8B22B3F2C40031A6D9 /* UIImage+Extension.swift in Sources */,
 				62AC508E1ECD888400E67C95 /* UIButton+BackBtn.swift in Sources */,
+				70286AFB25218D660004BFE7 /* TSDatePickerView.swift in Sources */,
 				E5B79E0E22B387A000E3AC96 /* KeyChainManager.swift in Sources */,
 				E5B79E0F22B387A000E3AC96 /* HttpHeader.swift in Sources */,
 				E540CF161F1CEF6D007F0683 /* SFFirstTextLastImageButton.swift in Sources */,
@@ -371,6 +461,8 @@
 				E578FB3E1E51A88900306FB3 /* SLLoadingView.m in Sources */,
 				E5E791E01E2F9BEE00D294E1 /* AppDelegate.swift in Sources */,
 				E51F20301EA617DC00B94019 /* XHCryptorTools.m in Sources */,
+				70286AFA25218D660004BFE7 /* TSTimePickerView.swift in Sources */,
+				70286B0125218E8A0004BFE7 /* Date.swift in Sources */,
 				62AC508A1ECD888400E67C95 /* BackButtonViewController.swift in Sources */,
 				62AC507E1ECD885700E67C95 /* RotaionViewController.swift in Sources */,
 				70D8D48B25218375004E17A8 /* UIScreen.swift in Sources */,
@@ -424,6 +516,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -449,7 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -483,6 +576,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -502,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -513,10 +607,12 @@
 		};
 		E5E791EF1E2F9BEE00D294E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7CCEEAD46DB471FB9B11EB4 /* Pods-ZJSCommon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ZJSCommon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -531,10 +627,12 @@
 		};
 		E5E791F01E2F9BEE00D294E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE70BE8482144283A0881CA /* Pods-ZJSCommon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ZJSCommon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
