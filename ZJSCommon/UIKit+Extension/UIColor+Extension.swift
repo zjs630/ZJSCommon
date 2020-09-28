@@ -15,7 +15,7 @@ extension UIColor {
     /// - Parameters:
     ///   - hex: 十六进制的RGB值
     ///   - alpha: 透明度
-    convenience init(rgb hex: UInt32, a alpha: CGFloat = 1.0) {
+    convenience init(_ hex: UInt32, _ alpha: CGFloat = 1.0) {
         let r = CGFloat((hex & 0xFF0000) >> 16) / 255.0
         let g = CGFloat((hex & 0xFF00) >> 8) / 255.0
         let b = CGFloat(hex & 0xFF) / 255.0

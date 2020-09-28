@@ -36,5 +36,10 @@ class ViewController: UIViewController {
         print(HttpHeader.headers)
         
     }
+    
+    @IBAction func showSegmentViewController(_ sender: UIButton) {
+        navigationController?.pushViewController(SegmentViewController(),animated: true)
+    }
+    
 }
 
