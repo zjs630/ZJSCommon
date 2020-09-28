@@ -6,7 +6,9 @@ target 'ZJSCommon' do
   use_frameworks!
   # 布局
   pod 'SnapKit'
-  
+  # SQLite数据库
+  pod 'FMDB'
+
 
 
 end

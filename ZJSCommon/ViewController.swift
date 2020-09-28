@@ -41,5 +41,10 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(SegmentViewController(),animated: true)
     }
     
+    
+    @IBAction func cityLocation(_ sender: UIButton) {
+        navigationController?.pushViewController(HomeViewController(),animated: true)
+    }
+    
 }
 
